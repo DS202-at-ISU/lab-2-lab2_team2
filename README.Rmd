@@ -52,7 +52,11 @@ library(classdata)
 
 Dhairya
 ```{r, comment = FALSE}
-#this is a comment
+hist(ames$`Sale Price`, ames$`TotalLivingArea (sf)`, 
+     xlab = "Sale Price", ylab = "TotalLivingArea", 
+     main = "Sale Price vs. TotalLivingArea")
+
+This Histogram plots a comparative value between Sale Price (log) and TotalLivingArea (sf). This shows that the TotalLivingArea data is ranging from 100 square feet to 3000 square feet. 
 ```
 
 
