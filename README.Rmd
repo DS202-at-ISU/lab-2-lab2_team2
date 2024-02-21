@@ -32,3 +32,7 @@ what is the range of the variable? draw a histogram for a numeric variable or a 
 follow-up on oddities: see 4
 
 The range is 0 to 20500000 dollars.  After making the histogram for the bedroom variable, we saw that the most houses had roughly 3 bedrooms.  We found that there were some with 7 or more bedrooms which was somewhat odd.
+
+```{r, comment = FALSE}
+#this is a comment
+```
