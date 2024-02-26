@@ -115,5 +115,15 @@ ranging from 100 square feet to 3000 square feet.
 Hazer
 
 ``` r
-#this is a comment
+ggplot(ames, aes(x = Acres, y = log10(`Sale Price`), color = FirePlace)) +
+  geom_point()
 ```
+
+    FALSE Warning: Removed 89 rows containing missing values (`geom_point()`).
+
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- --> I picked the
+acres variable which ranges from 0-7 acres. There is no linear
+relationship between the variables and all the points are just bunched
+up together. We have a few outliers with larger number of acres but they
+tend to be more expensive as we would expect, thus we don’t see any
+oddities in this plot.
