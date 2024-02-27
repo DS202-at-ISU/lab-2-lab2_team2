@@ -64,14 +64,17 @@ It seems that the Sale Price for Neighborhoods like S and W ISU and Campus apart
 
 Dhairya
 
-```{r, comment = FALSE}
-#Commented because it is not working
-#hist(ames$`Sale Price`, ames$`TotalLivingArea (sf)`, 
-    # xlab = "Sale Price", ylab = "TotalLivingArea", 
-    # main = "Sale Price vs. TotalLivingArea")
+```
+#Histogram for Bedrooms
+ggplot(ames, aes(x = Bedrooms)) +
+  geom_histogram(fill = "skyblue", color = "black", bins = 20) +
+  labs(title = "Distribution of Bedrooms",
+       x = "Number of Bedrooms",
+       y = "Frequency") +
+  theme_minimal()
 ```
 
-This Histogram plots a comparative value between Sale Price (log) and TotalLivingArea (sf). This shows that the TotalLivingArea data is ranging from 100 square feet to 3000 square feet.
+The above shows a distribution of bedrooms from here we can assume that there are listing with the most of either 3 or 4 bedrooms
 
 Hazer
 
